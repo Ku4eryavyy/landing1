@@ -1,0 +1,305 @@
+@use "../helpers/mixins" as helperModule;
+@use "../helpers/variables";
+@use "../library/library" as inputs;
+
+.title {
+    color: var(--txt-primary, #00B9B6);
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    margin: 0;
+}
+
+.headline {
+    color: var(--txt-black, #0E0E0F);
+    font-family: Inter;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 120%;
+    align-self: stretch;
+    width: 600px;
+    margin: 0;
+}
+
+.sessions__button-button {
+    border-radius: 12px;
+    background: var(--colors-gradient, linear-gradient(225deg, #00B9B6 0%, #00CDAC 100%));
+    box-shadow: 0px 15px 30px 0px rgba(220, 232, 243, 0.25);
+    padding: 12px 30px 14px 30px;
+    gap: 10px;
+    border: 0;
+    color: var(--txt-white, #FFF);
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    cursor: pointer;
+}
+
+.sessions__headline {
+    margin-bottom: 50px;
+}
+
+.sessions {
+    display: flex;
+    margin-bottom: 140px;
+}
+
+.section__application-video {
+  cursor: pointer;
+  margin-right: 50px;
+}
+
+.download-title {
+    color: var(--txt-black, #0E0E0F);
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    width: 454px;
+}
+
+.section__application {
+    display: flex;
+}
+
+.application__logo-icon {
+    border-radius: 12px;
+    background: #FFF;
+    box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.05);
+    padding: 10px 10px;
+}
+
+.application__headline {
+    color: #00B9B6;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.section__application-logo {
+    display: flex;
+    margin-bottom: 82px;
+}
+
+.application__title {
+    color: var(--txt-black-lighten, #333);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    margin: 0;
+}
+
+.section__application-title {
+    display: flex;
+}
+
+.application__title {
+    width: 300px;
+}
+
+.section__application-main {
+    margin-left: 20px;
+}
+
+.download__application-section {
+    padding: 8px 12px;
+    border-radius: 8px;
+    background: #2E3A59;
+    box-shadow: 0px 15px 30px 0px rgba(220, 232, 243, 0.25);
+    border: 0;
+    cursor: pointer;
+}
+
+.download__application-section:first-child {
+    margin-right: 20px;
+}
+
+.section__application {
+    margin-bottom: 140px;
+}
+
+.psychologists__title-text {
+    color: var(--txt-black, #0E0E0F);
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+.psychologists__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 55px;
+}
+
+.psychologists__topics-text {
+    color: var(--txt-black-lighten, #333);
+    text-align: center;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    margin: 0;
+}
+
+.psychologists__topics-button {
+    padding: 10px 30px;
+    gap: 5px;
+    border-radius: 12px;
+    background: var(--colors-white, #FFF);
+    box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.05);
+}
+
+.psychologists__topics-main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.psychologists__topics {
+    margin-right: 15px;
+}
+
+.psychologists__topics-text-dedicated {
+    color: var(--txt-primary, #00B9B6);
+}
+
+.psychologists__topics-text-full {
+    color: var(--txt-white, #FFF);
+    text-align: center;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+.psychologists__topics-button-full {
+    border-radius: 12px;
+    background: var(--colors-gradient, linear-gradient(225deg, #00B9B6 0%, #00CDAC 100%));
+    box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.10);
+}
+
+.psychologists__list {
+    margin-top: 35px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: space-between;
+    margin-bottom: 40px;
+}
+
+.psychologist-menu {
+    border-radius: 12px;
+    background: var(--colors-white, #FFF);
+    box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.05);
+    padding: 15px;
+}
+
+.psychologist-name {
+    color: var(--txt-black-lighten, #333);
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    
+}
+
+.psychologist-arrow {
+    align-self: flex-end;
+    cursor: pointer;
+}
+
+.rating {
+    display: flex;
+    justify-content: space-between;
+}
+
+.stars {
+    margin-top: 5px;
+}
+
+.psychologist-slider {
+    width: 20px;
+    height: 6px;
+    background: rgba(0, 185, 182, 0.25);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.psychologist-slider-select {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.psychologist-slider--active {
+    width: 30px;
+    background: #00B9B6;
+}
+
+.support-enumeration--text {
+    color: var(--txt-black, #0E0E0F);
+    font-family: Inter;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 120%;
+    margin: 0;
+}
+
+.psychologists {
+    margin-bottom: 188px;
+}
+
+.enumeration-item {
+    color: var(--txt-black-lighten, #333);
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+.enumeration-item {
+    background-image: url(./images/check.svg);
+    background-position: 0 0;
+    background-size: 1.6rem 1.6rem;
+    background-repeat: no-repeat;
+}
+
+.enumeration-list {
+    list-style-type: none;
+    margin-right: 40px;
+    padding-left: -40px;
+}
+
+#ul {
+    padding-left: -40px;
+}
+
+
+
+
+
+

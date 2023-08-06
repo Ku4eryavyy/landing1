@@ -1,0 +1,118 @@
+@use "../helpers/mixins" as helperModule;
+@use "../helpers/variables";
+@use '../library/library';
+
+// header {
+//     border: 2px solid blue;
+//     background-color: red;
+//     @include helperModule.color ();
+// }
+
+// header p {
+//     color: variables.$color;
+// }
+
+// button {
+//     @include library.button;
+// }
+
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+width: 1120px;
+margin-right: auto;
+margin-left: auto;
+}
+
+.section__header {
+  display: flex;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin-bottom: 122px;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.header-navigation__link {
+  color: var(--txt-black-lighten, #333);
+  text-align: center;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 21.6px */
+}
+
+.header-navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex: 1 0 0;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.enter {
+  display: flex;
+}
+
+.language {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction:row;
+  gap: 6px;
+  margin-right: 20px;
+}
+
+.language__choose {
+  color: var(--txt-black-lighten, #333);
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+}
+
+.header__button {
+  display: flex;
+  padding: 12px 30px 13px 30px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 12px;
+  background: var(--colors-gradient, linear-gradient(225deg, #00B9B6 0%, #00CDAC 100%));
+  box-shadow: 0px 15px 30px 0px rgba(220, 232, 243, 0.25);
+  border: 0;
+}
+
+.header__button-text {
+  padding: 0;
+  margin: 0;
+  color: var(--txt-white, #FFF);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 19.2px */
+}
+
+body {
+  background: rgba(249, 253, 255, 0.70);
+  backdrop-filter: blur(350px);
+  
+}
+
+.button {
+  margin-top: 2px;
+}
+
+.header__button {
+  cursor: pointer;
+}
