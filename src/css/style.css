@@ -765,7 +765,7 @@ body {
   display: flex;
   border-radius: 24px;
   background: rgba(0, 185, 182, 0.1);
-  padding-bottom: 116px;
+  padding-bottom: 120px;
 }
 
 .section__online-sessions--mobile {
@@ -818,6 +818,7 @@ body {
 
 .section__online-sessions {
   position: relative;
+  margin-bottom: 140px;
 }
 
 .online-sessions__psyholog {
@@ -826,4 +827,85 @@ body {
 
 .online-sessions__psyholog--enumeration {
   margin-left: 23px;
+}
+
+.online-sessions__psyholog--text {
+  margin: 0;
+}
+
+.online-sessions__psyholog--headline {
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+
+.specialist-select--text {
+  color: var(--txt-black, #0E0E0F);
+  font-family: Inter;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 120%;
+  margin: 0;
+}
+
+.specialist-select--description {
+  color: var(--txt-primary, #00B9B6);
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 140%;
+  margin: 0;
+}
+
+.specialist-select--headline-description {
+  margin-bottom: 62px;
+}
+
+.select-specialist__number {
+  color: var(--txt-accent, #00B9B6);
+  font-family: Inter;
+  font-size: 128px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+  opacity: 0.1;
+  margin: 0;
+}
+
+.select-specialist__headline {
+  color: var(--txt-black, #0E0E0F);
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 140%;
+  margin: 0;
+}
+
+.select-specialist__title {
+  color: var(--txt-black-lighten, #333);
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 150%;
+  margin: 0;
+}
+
+.select-specialist__enumeration {
+  width: 740px;
+  display: flex;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.select-specialist__text {
+  margin-top: 20px;
+  position: absolute;
+  left: 50px;
+}
+
+.select-specialist__enumeration:last-child {
+  margin-bottom: -30px;
+}
+
+.select-specialist__section {
+  display: flex;
 }
