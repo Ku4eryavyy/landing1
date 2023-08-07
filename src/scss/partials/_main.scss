@@ -476,6 +476,116 @@
     display: flex;
 }
 
+.service--headline-text {
+    color: var(--txt-black, #0E0E0F);
+    font-family: Inter;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 120%;
+    margin: 0;
+}
+
+.service--headline-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.section__support {
+    margin-bottom: 140px;
+}
+
+.service__review-video {
+    cursor: pointer;
+}
+
+.service__main {
+    display: flex;
+    margin-bottom: 85px;
+}
+
+.service__statistics--headline {
+    color: var(--colors-additional, #FFA800);
+    font-family: Inter;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 120%;
+    margin: 0;
+}
+
+.service__statistics--text {
+    color: var(--txt-black, #0E0E0F);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    margin: 0;
+}
+
+.service__statistics {
+    margin-bottom: 40px;
+}
+
+.service__statistics:last-child {
+    margin-bottom: -40px;
+}
+
+.service__statistics-main {
+    margin-top: 50px;
+    margin-left: 95px;
+}
+
+.service__selection--headline {
+    color: var(--txt-black, #0E0E0F);
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 120%;
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+.service__selection--text {
+    color: var(--txt-black-lighten, #333);
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 140%;
+    margin: 0;
+}
+
+.service__selection {
+    display: flex;
+    padding: 20px 30px 20px 120px;
+    align-items: flex-start;
+    border-radius: 24px;
+    background: var(--colors-white, #FFF);
+    box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.05);
+    position: relative;
+}
+
+.service__selection-union::before {
+    content: url(../images/icon-calendar.png);
+    position: absolute;
+    left: 2%;
+}
+
+.service__selection-union {
+    width: 400px;
+}
+
+.service__rebounds {
+    display: flex;
+    gap: 20px;
+}
+
+.service__selection-union--additionally::before {
+    content: url(../images/icon-watch.png);
+    position: absolute;
+    left: 2%;
+}
+
 
 
 
