@@ -6,10 +6,8 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 html {
-  line-height: 1.15;
-  /* 1 */
-  -webkit-text-size-adjust: 100%;
-  /* 2 */
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
 }
 
 /* Sections
@@ -44,12 +42,9 @@ h1 {
  * 2. Show the overflow in Edge and IE.
  */
 hr {
-  box-sizing: content-box;
-  /* 1 */
-  height: 0;
-  /* 1 */
-  overflow: visible;
-  /* 2 */
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
 }
 
 /**
@@ -57,10 +52,8 @@ hr {
  * 2. Correct the odd `em` font sizing in all browsers.
  */
 pre {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
 }
 
 /* Text-level semantics
@@ -77,12 +70,10 @@ a {
  * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
  */
 abbr[title] {
-  border-bottom: none;
-  /* 1 */
-  text-decoration: underline;
-  /* 2 */
-  text-decoration: underline dotted;
-  /* 2 */
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted; /* 2 */
 }
 
 /**
@@ -100,10 +91,8 @@ strong {
 code,
 kbd,
 samp {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
 }
 
 /**
@@ -153,14 +142,10 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: inherit;
-  /* 1 */
-  font-size: 100%;
-  /* 1 */
-  line-height: 1.15;
-  /* 1 */
-  margin: 0;
-  /* 2 */
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
 }
 
 /**
@@ -168,8 +153,7 @@ textarea {
  * 1. Show the overflow in Edge.
  */
 button,
-input {
-  /* 1 */
+input { /* 1 */
   overflow: visible;
 }
 
@@ -178,8 +162,7 @@ input {
  * 1. Remove the inheritance of text transform in Firefox.
  */
 button,
-select {
-  /* 1 */
+select { /* 1 */
   text-transform: none;
 }
 
@@ -228,18 +211,12 @@ fieldset {
  *    `fieldset` elements in all browsers.
  */
 legend {
-  box-sizing: border-box;
-  /* 1 */
-  color: inherit;
-  /* 2 */
-  display: table;
-  /* 1 */
-  max-width: 100%;
-  /* 1 */
-  padding: 0;
-  /* 3 */
-  white-space: normal;
-  /* 1 */
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
 }
 
 /**
@@ -262,10 +239,8 @@ textarea {
  */
 [type=checkbox],
 [type=radio] {
-  box-sizing: border-box;
-  /* 1 */
-  padding: 0;
-  /* 2 */
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
 }
 
 /**
@@ -281,10 +256,8 @@ textarea {
  * 2. Correct the outline style in Safari.
  */
 [type=search] {
-  -webkit-appearance: textfield;
-  /* 1 */
-  outline-offset: -2px;
-  /* 2 */
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
 }
 
 /**
@@ -299,10 +272,8 @@ textarea {
  * 2. Change font properties to `inherit` in Safari.
  */
 ::-webkit-file-upload-button {
-  -webkit-appearance: button;
-  /* 1 */
-  font: inherit;
-  /* 2 */
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
 }
 
 /* Interactive
@@ -366,8 +337,7 @@ a {
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
-  line-height: 120%;
-  /* 21.6px */
+  line-height: 120%; /* 21.6px */
 }
 
 .header-navigation {
@@ -422,13 +392,13 @@ a {
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
-  line-height: 120%;
-  /* 19.2px */
+  line-height: 120%; /* 19.2px */
 }
 
 body {
   background: rgba(249, 253, 255, 0.7);
-  backdrop-filter: blur(350px);
+  -webkit-backdrop-filter: blur(350px);
+          backdrop-filter: blur(350px);
 }
 
 .button {
@@ -1018,105 +988,4 @@ body {
   content: url(../images/icon-watch.png);
   position: absolute;
   left: 2%;
-}
-
-.communication__section--headline-text {
-  color: var(--txt-black, #0E0E0F);
-  font-family: Inter;
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 120%;
-  margin: 0;
-}
-
-.communication__section--headline {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 70px;
-}
-
-.section__service {
-  margin-bottom: 145px;
-}
-
-.application-form--headline {
-  color: var(--txt-black, #0E0E0F);
-  font-family: Inter;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 120%;
-  margin-bottom: 10px;
-}
-
-.application-form--text {
-  color: var(--txt-black-lighten, #333);
-  font-family: Inter;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 140%;
-  margin: 0;
-  margin-bottom: 105px;
-}
-
-.application-form--span {
-  color: var(--txt-primary, #00B9B6);
-}
-
-.application-form {
-  width: 355px;
-}
-
-.chat-speak__section {
-  display: flex;
-  justify-content: space-between;
-}
-
-.application-form--headline::before {
-  margin-right: 10px;
-  color: var(--txt-primary, #00B9B6);
-}
-
-.application-form ul {
-  list-style: none;
-}
-
-.application-form--headline-first::before {
-  content: "1";
-}
-
-.application-form--headline-third::before {
-  content: "3";
-}
-
-.application-form--headline-second::before {
-  content: "2";
-}
-
-.application-form--headline-fourth::before {
-  content: "4";
-}
-
-.application-form {
-  margin-top: 45px;
-}
-
-.application-form--button button {
-  color: var(--txt-primary, #00B9B6);
-  font-family: Inter;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 120%;
-  padding: 12px 30px 14px 30px;
-  border-radius: 12px;
-  border: 1px solid var(--colors-primary, #00B9B6);
-  background: var(--colors-bg, #F9FDFF);
-  box-shadow: 0px 15px 30px 0px rgba(220, 232, 243, 0.25);
-  cursor: pointer;
-}
-
-.application-form--button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+}/*# sourceMappingURL=style.css.map */
